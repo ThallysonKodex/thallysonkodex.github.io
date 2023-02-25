@@ -1,0 +1,129 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;rrr
+}
+
+body {
+    cursor: url("pokeout.png"), auto;
+}
+
+
+
+#test {
+    top: 0;
+    width: 600px;
+    height: 2000px;
+    background-color: antiquewhite;
+    position: absolute;
+}
+
+#overall {
+    position: fixed;
+}
+
+#twotest {
+    position: relative;
+   
+}
+
+.two {
+    margin-top: 3px;
+    font-weight: bold;
+    background-color: crimson;
+    height: 80px;
+    width: 40px;
+    border: medium solid crimson;
+    border-radius: 20px 10px;
+    text-align: center;
+    transition: 
+     background-color 500ms, 
+     border-color 500ms, border-radius 1s;
+    
+    animation: right-to-left 300ms ease-in-out;
+    
+}
+
+.two:hover {
+    background-color: white;
+    border-color: crimson;
+    border-radius: 10px 20px 10px 20px;
+    animation: left-to-right 300ms ease-in forwards;
+    cursor: pointer;
+
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translate(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+
+}
+
+.two p {
+    padding: 2px 20px 65px 14px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+
+}
+
+
+
+.two p:hover{
+    color: crimson;
+    opacity: 1;
+}
+
+.two img {
+    position: relative;
+    bottom: 70px;
+    right: 13px;
+    width: 60px;
+    height: 60px;
+    transition: transform 300ms ease-in;
+    user-select: none;
+}
+
+.two img:hover {
+    transform: translateX(8px) scale(120%) rotate(360deg);
+    
+}
+
+.two .pokedex {
+    background-size: cover;
+    position: relative;
+    bottom: 70px;
+    right: 13px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    
+}
+
+.two .bulbasaur {
+    background-image: url("pokemons/bulbasaur.png");
+}
+
+.two .pikachu {
+    background-image: url("pokemons/pikachu.png");
+}
