@@ -5,11 +5,14 @@
     box-sizing: border-box;
     z-index: 1;
     user-select: none;
-    -webkit-user-drag: none;rrr
+    
 }
 
 body {
     cursor: url("pokeout.png"), auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -19,7 +22,11 @@ body {
     width: 600px;
     height: 2000px;
     background-color: antiquewhite;
-    position: absolute;
+
+}
+
+#test::before {
+    content: ' Kodex';
 }
 
 #overall {
