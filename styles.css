@@ -1,0 +1,134 @@
+.items > .helvetica {
+    font-family: Helvetica !important;
+}
+
+.items > .arial {
+    font-family: Arial !important;
+}
+
+.items > .georgia {
+    font-family: Georgia !important;
+}
+
+* {
+    font-size: 15px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Georgia, sans-serif;
+}
+
+p {
+    font-weight: 200;
+    font-size: 15px;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+.content .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.box > .fonts {
+    display: inline-block;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.colors {
+    text-align: center;
+    padding: 10px 75px;
+    font-weight: bold;
+
+}
+
+.items > .red {
+    background-color: #de5b52;
+}
+
+.items > .green {
+    background-color: #8cc286;
+}
+
+.items > .blue {
+    background-color: #6483a3;
+}
+
+.fonts {
+    margin-left: 10px;
+    
+}
+
+.colors+.colors {
+
+    margin-left: 40px;
+    
+}
+
+
+.fonts > h3 {
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline;
+
+}
+
+
+li+li::before {
+    content: "[";
+}
+
+li::before {
+    content: "[";
+}
+
+li::after {
+    content: " ]";
+}
+
+.vb {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.style {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
